@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2E648270222E189F006CE693 /* Pods_TheWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D8415B1DA89B51195ED14 /* Pods_TheWeatherApp.framework */; };
+		CF53CA0024D11FC2008ACCAD /* AddCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF53C9FF24D11FC2008ACCAD /* AddCityVC.swift */; };
 		CF77E2B824C90C4000C6EFA7 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77E2B724C90C4000C6EFA7 /* WeatherData.swift */; };
 		CF77E2BB24C9475C00C6EFA7 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77E2BA24C9475C00C6EFA7 /* WeatherModel.swift */; };
+		CF8FF74324D1364B002EEB1F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FF74224D1364B002EEB1F /* City.swift */; };
 		CF9042E724C00ADA00C2B4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9042E624C00ADA00C2B4D6 /* AppDelegate.swift */; };
 		CF9042E924C00ADA00C2B4D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9042E824C00ADA00C2B4D6 /* SceneDelegate.swift */; };
 		CF9042EB24C00ADA00C2B4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9042EA24C00ADA00C2B4D6 /* ViewController.swift */; };
@@ -23,8 +25,10 @@
 /* Begin PBXFileReference section */
 		155D8415B1DA89B51195ED14 /* Pods_TheWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07A7780B0800DFBA1D7894E /* Pods-TheWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-TheWeatherApp/Pods-TheWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		CF53C9FF24D11FC2008ACCAD /* AddCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityVC.swift; sourceTree = "<group>"; };
 		CF77E2B724C90C4000C6EFA7 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		CF77E2BA24C9475C00C6EFA7 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		CF8FF74224D1364B002EEB1F /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		CF9042E324C00ADA00C2B4D6 /* TheWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9042E624C00ADA00C2B4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9042E824C00ADA00C2B4D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 			children = (
 				CF9042EA24C00ADA00C2B4D6 /* ViewController.swift */,
 				CF9042FA24C0111200C2B4D6 /* CityTableViewController.swift */,
+				CF53C9FF24D11FC2008ACCAD /* AddCityVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 				CF9042FC24C02A2200C2B4D6 /* NetworkManager.swift */,
 				CF77E2B724C90C4000C6EFA7 /* WeatherData.swift */,
 				CF77E2BA24C9475C00C6EFA7 /* WeatherModel.swift */,
+				CF8FF74224D1364B002EEB1F /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,9 +258,11 @@
 			files = (
 				CF9042FB24C0111200C2B4D6 /* CityTableViewController.swift in Sources */,
 				CF9042EB24C00ADA00C2B4D6 /* ViewController.swift in Sources */,
+				CF8FF74324D1364B002EEB1F /* City.swift in Sources */,
 				CF9042FD24C02A2200C2B4D6 /* NetworkManager.swift in Sources */,
 				CF77E2BB24C9475C00C6EFA7 /* WeatherModel.swift in Sources */,
 				CF9042E724C00ADA00C2B4D6 /* AppDelegate.swift in Sources */,
+				CF53CA0024D11FC2008ACCAD /* AddCityVC.swift in Sources */,
 				CF77E2B824C90C4000C6EFA7 /* WeatherData.swift in Sources */,
 				CF9042E924C00ADA00C2B4D6 /* SceneDelegate.swift in Sources */,
 			);

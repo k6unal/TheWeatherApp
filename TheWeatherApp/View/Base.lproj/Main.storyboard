@@ -180,14 +180,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="aTd-2Z-mvc">
-                        <barButtonItem key="leftBarButtonItem" title="Fav" id="Mvb-jX-o4a" userLabel="Fav">
+                        <barButtonItem key="leftBarButtonItem" title="Favourites Cites" style="done" id="Mvb-jX-o4a" userLabel="Fav">
                             <connections>
                                 <action selector="menuButtonTapped:" destination="BYZ-38-t0r" id="gcq-0Z-QkI"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4FK-cu-ZOu">
-                            <connections>
-                                <segue destination="wZB-Qh-UAw" kind="show" id="l9S-kj-SK6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -202,17 +197,50 @@
             </objects>
             <point key="canvasLocation" x="92.753623188405811" y="-62.276785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Add City Name-->
         <scene sceneID="KRK-RJ-wtz">
             <objects>
-                <viewController id="wZB-Qh-UAw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddCityVC" id="wZB-Qh-UAw" customClass="AddCityVC" customModule="TheWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gpK-cb-TPQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iv7-JT-Yer">
+                                <rect key="frame" x="10" y="78" width="394" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gI8-dV-7Eq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level2"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiY-lS-nPE">
+                                <rect key="frame" x="10" y="163" width="394" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ryH-3G-yjr"/>
+                                </constraints>
+                                <state key="normal" title="Add City to Favourities">
+                                    <color key="titleColor" red="1" green="0.99215686270000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddCity:" destination="wZB-Qh-UAw" eventType="touchUpInside" id="VF6-sE-n5o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aiY-lS-nPE" firstAttribute="leading" secondItem="hoA-wR-DAl" secondAttribute="leading" constant="10" id="JiM-Jf-ijA"/>
+                            <constraint firstItem="hoA-wR-DAl" firstAttribute="trailing" secondItem="iv7-JT-Yer" secondAttribute="trailing" constant="10" id="NLi-tg-51i"/>
+                            <constraint firstItem="aiY-lS-nPE" firstAttribute="top" secondItem="iv7-JT-Yer" secondAttribute="bottom" constant="5" id="dXd-em-ifC"/>
+                            <constraint firstItem="iv7-JT-Yer" firstAttribute="leading" secondItem="hoA-wR-DAl" secondAttribute="leading" constant="10" id="rVp-3Y-hOE"/>
+                            <constraint firstItem="hoA-wR-DAl" firstAttribute="trailing" secondItem="aiY-lS-nPE" secondAttribute="trailing" constant="10" id="sGF-9m-pyt"/>
+                            <constraint firstItem="iv7-JT-Yer" firstAttribute="top" secondItem="hoA-wR-DAl" secondAttribute="top" constant="34" id="wdc-rr-Tgo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hoA-wR-DAl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="07A-ST-gRI"/>
+                    <navigationItem key="navigationItem" title="Add City Name" id="07A-ST-gRI"/>
+                    <connections>
+                        <outlet property="addCitytxt" destination="iv7-JT-Yer" id="mbb-lh-g43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdB-2J-v21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

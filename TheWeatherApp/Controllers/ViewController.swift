@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate, NetworkManagerDeleg
     var menu : SideMenuNavigationController?
     var weatherManager = NetworkManager()
     var locationManager = CLLocationManager()
+    var newCity : String = ""
     
     
     override func viewDidLoad() {
@@ -36,8 +37,6 @@ class ViewController: UIViewController, UITextFieldDelegate, NetworkManagerDeleg
         
         
 //        menu?.setNavigationBarHidden(true, animated: false)
-        
-        
         
         
         SideMenuManager.default.leftMenuNavigationController = menu
@@ -85,8 +84,4 @@ class ViewController: UIViewController, UITextFieldDelegate, NetworkManagerDeleg
     }
     
     
-    
-    
-    
 }
-
